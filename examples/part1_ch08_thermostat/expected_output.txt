@@ -1,0 +1,8 @@
+66.0 °F, store open: heat
+69.0 °F, store open: heat
+71.0 °F, store open: heat
+72.5 °F, store open: off
+75.0 °F, store open: cool
+73.0 °F, store open: cool
+71.5 °F, store open: off
+75.0 °F, store closed: off

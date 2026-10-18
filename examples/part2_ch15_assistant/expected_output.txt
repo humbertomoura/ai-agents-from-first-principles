@@ -1,0 +1,6 @@
+[1] check_calendar:Saturday -> {'openings': 0}
+[1] check_price:carrot cake -> {'price': 60.0}
+[2] check_calendar:Friday -> {'openings': 3}
+state: SUCCESS
+answer:
+Saturday is booked, but Friday has openings! It's $60.00. Want me to put you down?

@@ -1,0 +1,18 @@
+   flavor: NEW
+   pickup: NEW
+   pickup: NOTHING TO DO
+   pickup: UPDATED
+  payment: BLOCKED (secret)
+ discount: BLOCKED (looks like a rule, not a fact)
+     trip: NEW
+   pickup: NEW
+
+What the agent remembers about Mrs. Lewis:
+  [pickup] pickup time is now 9 a.m.
+  [flavor] prefers lactose-free cake
+Context built with 5 blocks
+
+Running summary:
+  - msg 1, msg 2, msg 3, msg 4, msg 5
+  - msg 6, msg 7, msg 8, msg 9, msg 10
+Kept: ['msg 11', 'msg 12']
