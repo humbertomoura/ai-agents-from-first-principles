@@ -15,7 +15,7 @@
 **Kindle edition:** 
 [Amazon USA](https://www.amazon.com/dp/B0HNJ65Q5S) 
 
-Other stores: [UK](https://www.amazon.co.uk/dp/B0HNJ65Q5S) [DE](https://www.amazon.de/dp/B0HNJ65Q5S) [FR](https://www.amazon.fr/dp/B0HNJ65Q5S) [ES](https://www.amazon.es/dp/B0HNJ65Q5S) [IT](https://www.amazon.it/dp/B0HNJ65Q5S) [NL](https://www.amazon.nl/dp/B0HNJ65Q5S) [JP](https://www.amazon.jp/dp/B0HNJ65Q5S) [BR](https://www.amazon.com.br/dp/B0HNJ65Q5S) [CA](https://www.amazon.ca/dp/B0HNJ65Q5S) [MX](https://www.amazon.mx/dp/B0HNJ65Q5S) [AU](https://www.amazon.com.au/dp/B0HNJ65Q5S)
+Other stores: [UK](https://www.amazon.co.uk/dp/B0HNJ65Q5S) [DE](https://www.amazon.de/dp/B0HNJ65Q5S) [FR](https://www.amazon.fr/dp/B0HNJ65Q5S) [ES](https://www.amazon.es/dp/B0HNJ65Q5S) [IT](https://www.amazon.it/dp/B0HNJ65Q5S) [NL](https://www.amazon.nl/dp/B0HNJ65Q5S) [JP](https://www.amazon.jp/dp/B0HNJ65Q5S) [BR](https://www.amazon.com.br/dp/B0HNJ65Q5S) [CA](https://www.amazon.ca/dp/B0HNJ65Q5S) [MX](https://www.amazon.com.mx/dp/B0HNJ65Q5S) [AU](https://www.amazon.com.au/dp/B0HNJ65Q5S)
 
 
 **Paperback edition:** 
