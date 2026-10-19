@@ -22,13 +22,18 @@ def summarize(r):
     return f"{data}{extra}"
 
 
+TERMINAL = {"SUCCESS", "FAILURE", "LIMIT_REACHED", "CANCELLED"}
+
+
 def resume(run, decide, approved, max_rounds=6):
+    if run.state in TERMINAL:   # an ended run never acts again
+        return run
     run.state = "RUNNING"
     while run.rounds < max_rounds:
         if not run.pending:             # ask the model
             requests, answer = decide(run.seen)
-            if not requests:
-                run.state = "SUCCESS"
+            if not requests:            # the model is done
+                run.state = "SUCCESS" if answer else "FAILURE"
                 run.answer = answer
                 return run
             run.pending = list(requests)

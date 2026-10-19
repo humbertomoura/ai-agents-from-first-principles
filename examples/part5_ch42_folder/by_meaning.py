@@ -1,7 +1,7 @@
 from folder import words
 
-# "Toy embedding": different words that mean the same
-# thing land on the same concept.
+# "Toy embedding": related words land on the same
+# concept.
 CONCEPTS = {
     "time": {"time", "minutes", "long", "takes"},
     "oven": {"oven", "bake", "baking", "preheat"},

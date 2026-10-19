@@ -6,7 +6,9 @@ PRICES = {"carrot cake": 60.0,
 
 
 def check_calendar(day):
-    return {"openings": CAPACITY - CALENDAR.get(day, 0)}
+    if day not in CALENDAR:     # unknown is not "free"
+        return {"error": f"we don't take orders for {day}"}
+    return {"openings": CAPACITY - CALENDAR[day]}
 
 
 def check_price(product):

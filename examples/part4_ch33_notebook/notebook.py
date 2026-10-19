@@ -25,8 +25,10 @@ def add_note(customer, topic, text, source, until=None):
         "select * from notebook where customer=? and "
         "topic=? and active=1", (customer, topic)
     ).fetchone()
-    if current and current["text"] == text:
-        return "NOTHING TO DO"
+    same = (text, source, until)
+    if current and tuple(current[k] for k in (
+            "text", "source", "until")) == same:
+        return "NOTHING TO DO"      # nothing changed at all
     old = None
     if current:                 # don't delete: replace
         old = current["id"]

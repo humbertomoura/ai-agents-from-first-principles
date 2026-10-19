@@ -1,4 +1,5 @@
 from control import Run, resume
+from runtime import frozen
 
 
 def simulated_model(seen):
@@ -7,7 +8,11 @@ def simulated_model(seen):
         return [("p1", "check_calendar",
                  {"day": "Friday"})], ""
     name, last = seen[-1]
+    if not last["ok"]:              # an error is feedback
+        return [], f"Sorry, that didn't work: {last['error']}."
     if name == "check_calendar":
+        if last["openings"] == 0:
+            return [], "Friday is fully booked. Another day?"
         cake = {"product": "carrot cake",
                 "day": "Friday"}
         # By mistake, it asks for the same thing twice.
@@ -16,14 +21,15 @@ def simulated_model(seen):
     return [], f"Order {last['number']} confirmed!"
 
 
-approved = set()
+approved = {}       # request ID -> exactly what was approved
 run = Run(session={"customer": "Mrs. Lewis"})
 run = resume(run, simulated_model, approved)
 
 while run.state == "BLOCKED":
-    req_id = run.pending[0][0]
+    req_id, name, args = run.pending[0]
     run.trail.append(f"    >> Rosa approved {req_id}")
-    approved.add(req_id)       # human approval
+    approved[req_id] = (run.session["customer"], name,
+                        frozen(args))   # a frozen copy
     run = resume(run, simulated_model, approved)
 
 for line in run.trail:

@@ -1,1 +1,3 @@
-openai>=1.40
+# The Responses API (client.responses) arrived in openai 1.66.0.
+# This edition was tested with openai 3.35.1.
+openai>=1.66

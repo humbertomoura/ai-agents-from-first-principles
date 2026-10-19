@@ -10,7 +10,8 @@ STOP_WORDS = {"a", "an", "the", "of", "in", "on", "at", "to", "for",
               "how", "before"}
 
 def words(text):
-    """Lowercase, no accents or punctuation, no stop words."""
+    """Lowercase, no accents, most punctuation removed
+    (hyphens inside codes like FX-200 stay), no stop words."""
     t = unicodedata.normalize("NFKD", text)
     t = t.encode("ascii", "ignore").decode().lower()
     return [w for w in re.findall(r"\w+(?:[.-]\w+)*", t)
@@ -19,7 +20,7 @@ def words(text):
 # Rosa's folder, already cut into chunks
 FOLDER = [
     ("carrot-recipe",
-     "Carrot cake: bake for 40 minutes at 350 degrees.",
+     "Carrot cake: bake for 40 minutes at 350 degrees Fahrenheit.",
      "everyone"),
     ("oven-manual",
      "Preheat the FX-200 oven for 15 minutes before baking.",

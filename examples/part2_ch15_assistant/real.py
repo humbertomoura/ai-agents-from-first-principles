@@ -41,7 +41,10 @@ for rnd in range(5):
     calls = [item for item in response.output
              if item.type == "function_call"]
     if not calls:                   # the model is done
-        print(response.output_text)
+        text = response.output_text
+        if response.status != "completed" or not text:
+            text = f"No usable answer ({response.status})."
+        print(text)
         break
     for call in calls:
         try:

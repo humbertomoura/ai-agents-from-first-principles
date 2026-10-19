@@ -42,28 +42,40 @@ git clone https://github.com/humbertomoura/ai-agents-from-first-principles.git
 cd ai-agents-from-first-principles
 python -m venv .venv
 source .venv/bin/activate        # Windows (PowerShell): .venv\Scripts\Activate.ps1
-pip install -r requirements-dev.txt
-pytest -q
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
 ```
 
-Then run any example from its folder:
+Then run any example from its folder, starting at the repository root:
 
 ```bash
 cd examples/part1_ch08_thermostat
 python run.py
+cd ../..                         # back to the repository root
 ```
 
-The entry script is `run.py` (Chapter 8), `simulated.py` (Chapter 15), or `story.py` (Chapters 24, 33, and 42).
+The entry script is `run.py` (Chapter 8), `simulated.py` (Chapter 15), or `story.py` (Chapters 24, 33, and 42). `tests/test_contracts.py` checks the contracts the chapters promise: validation before action, terminal states, approval bound to the exact proposal, idempotent retries, memory updates, and the role of retrieved data.
 
 ## The Chapter 15 demo with a real model
 
-Only `real.py`, in `part2_ch15_assistant`, calls a real model. Store your key in an environment variable, never in the code:
+Only `real.py`, in `part2_ch15_assistant`, calls a real model. Store your key in an environment variable, never in the code. From the repository root:
 
 ```bash
 export OPENAI_API_KEY="your-key"
 export OPENAI_MODEL="gpt-6-astra"   # check the documentation for the recommended model
+cd examples/part2_ch15_assistant
 python real.py
 ```
+
+API use is billed. Before running it, set a low spending alert **and**, where available, a hard spend limit for the project: an alert alone does not stop requests.
+
+## Edition and versions
+
+The code that matches the first edition of the book is tagged `v1.0-book`. Later changes on `main` may differ from the printed listings. The examples were tested with Python 3.11 to 3.13 (see the CI workflow) and `openai` 3.35.1.
+
+## What the examples are (and aren't)
+
+Each example is an independent teaching demonstration of one building block. They deliberately simplify: for instance, the Chapter 24 intention key treats "same customer, product, and day" as one order, and the Chapter 42 check only confirms that cited labels exist, not that the answer is supported. Each chapter explains its own limits under "What's missing for production."
 
 ## Contact
 

@@ -27,4 +27,4 @@ def answer(question, profile, generate):
     exist = {e["id"] for e in evidence}
     if not cited or cited - exist:
         return "ANSWER WITHOUT A VALID SOURCE", reply
-    return "OK", reply
+    return "LABELS OK", reply      # labels exist, nothing more

@@ -54,10 +54,10 @@ def test_meaning_search_links_different_words():
 
 def test_answer_checks_citations():
     q = "How long does the carrot cake stay in the oven?"
-    ok = lambda q, e: "Bake for 40 minutes at 350 degrees [E1]."
+    ok = lambda q, e: "Bake for 40 minutes at 350 degrees Fahrenheit [E1]."
     fake = lambda q, e: "Bake for 50 minutes [E7]."
     none = lambda q, e: "Bake for 50 minutes."
-    assert answer(q, "assistant", ok)[0] == "OK"
+    assert answer(q, "assistant", ok)[0] == "LABELS OK"
     assert answer(q, "assistant", fake)[0] == "ANSWER WITHOUT A VALID SOURCE"
     assert answer(q, "assistant", none)[0] == "ANSWER WITHOUT A VALID SOURCE"
 

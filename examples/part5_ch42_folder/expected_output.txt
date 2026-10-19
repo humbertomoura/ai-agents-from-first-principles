@@ -12,6 +12,7 @@ manager: Is there a penalty if the flour is late?
 assistant: Who won the 2002 World Series?
   (no evidence)
 
-OK: Bake for 40 minutes at 350 degrees [E1].
+LABELS OK: Bake for 40 minutes at 350 degrees Fahrenheit [E1].
 ANSWER WITHOUT A VALID SOURCE: Bake for 50 minutes [E7].
 NOT FOUND: I couldn't find that in the folder.
+LABELS OK: Rosa's grandmother invented it [E1].

@@ -15,7 +15,7 @@ show("Is there a penalty if the flour is late?", "manager")
 show("Who won the 2002 World Series?", "assistant")
 
 def right_model(question, evidence):
-    return "Bake for 40 minutes at 350 degrees [E1]."
+    return "Bake for 40 minutes at 350 degrees Fahrenheit [E1]."
 
 def making_it_up(question, evidence):
     return "Bake for 50 minutes [E7]."
@@ -27,4 +27,11 @@ for generate in (right_model, making_it_up):
     print(f"{status}: {text}")
 status, text = answer("Who won the 2002 World Series?",
                       "assistant", right_model)
+print(f"{status}: {text}")
+
+def labels_only(question, evidence):
+    return "Rosa's grandmother invented it [E1]."
+
+status, text = answer("Who invented carrot cake?",
+                      "assistant", labels_only)
 print(f"{status}: {text}")
