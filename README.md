@@ -1,3 +1,8 @@
+<div align="center">
+  <a href="https://www.amazon.com.br/dp/B0HMZ3N4C4">
+  <img src="assets/cover-ai-agents.jpg" alt="Cover of the book AI Agents from First Principles. A Practical Python Guide to Tools, Memory, and RAG" width="235">
+  </a>
+</div>
 # AI Agents from First Principles
 
 **A Practical Python Guide to Tools, Memory, and RAG: source code and examples from the book**
