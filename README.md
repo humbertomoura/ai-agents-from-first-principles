@@ -10,6 +10,13 @@
 >
 > This repository holds the examples from *AI Agents from First Principles: A Practical Python Guide to Tools, Memory, and RAG*, by **Humberto Jorge de Moura Costa**. The goal is to understand and build the inner workings of an agent before relying on a framework's abstractions.
 
+**Edições do livro:** 
+
+[Kindle — Amazon USA](https://www.amazon.com/dp/B0HNJ65Q5S)
+
+[Paperback - Amazon USA](https://www.amazon.com/dp/B0HNJGRL9S) [UK](https://www.amazon.com.uk/dp/B0HNJGRL9S) [DE](https://www.amazon.com.de/dp/B0HNJGRL9S) [FR](https://www.amazon.com.fr/dp/B0HNJGRL9S) [ES](https://www.amazon.com.es/dp/B0HNJGRL9S) [IT](https://www.amazon.com.it/dp/B0HNJGRL9S) [NL](https://www.amazon.com.nl/dp/B0HNJGRL9S) [JP](https://www.amazon.com.jp/dp/B0HNJGRL9S) [BR](https://www.amazon.com.br/dp/B0HNJGRL9S) [CA](https://www.amazon.com.ca/dp/B0HNJGRL9S) [MX](https://www.amazon.com.mx/dp/B0HNJGRL9S) [AU](https://www.amazon.com.au/dp/B0HNJGRL9S)
+ 
+
 The book covers the fundamentals and the step-by-step construction of AI agents in Python. This repository provides the hands-on examples and the automated tests.
 
 The thread running through the book is **Rosa's Bakery**, a teaching scenario that grows from simple decisions into tools, human approval, memory, and document lookup.
