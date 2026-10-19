@@ -14,7 +14,7 @@
 
 [Kindle — Amazon USA](https://www.amazon.com/dp/B0HNJ65Q5S)
 
-[Paperback - Amazon USA](https://www.amazon.com/dp/B0HNJGRL9S) [UK](https://www.amazon.com.uk/dp/B0HNJGRL9S) [DE](https://www.amazon.com.de/dp/B0HNJGRL9S) [FR](https://www.amazon.com.fr/dp/B0HNJGRL9S) [ES](https://www.amazon.com.es/dp/B0HNJGRL9S) [IT](https://www.amazon.com.it/dp/B0HNJGRL9S) [NL](https://www.amazon.com.nl/dp/B0HNJGRL9S) [JP](https://www.amazon.com.jp/dp/B0HNJGRL9S) [BR](https://www.amazon.com.br/dp/B0HNJGRL9S) [CA](https://www.amazon.com.ca/dp/B0HNJGRL9S) [MX](https://www.amazon.com.mx/dp/B0HNJGRL9S) [AU](https://www.amazon.com.au/dp/B0HNJGRL9S)
+[Paperback - Amazon USA](https://www.amazon.com/dp/B0HNJGRL9S) [UK](https://www.amazon.co.uk/dp/B0HNJGRL9S) [DE](https://www.amazon.de/dp/B0HNJGRL9S) [FR](https://www.amazon.fr/dp/B0HNJGRL9S) [ES](https://www.amazon.es/dp/B0HNJGRL9S) [IT](https://www.amazon.it/dp/B0HNJGRL9S) [NL](https://www.amazon.nl/dp/B0HNJGRL9S) [JP](https://www.amazon.jp/dp/B0HNJGRL9S) [BR](https://www.amazon.com.br/dp/B0HNJGRL9S) [CA](https://www.amazon.ca/dp/B0HNJGRL9S) [MX](https://www.amazon.mx/dp/B0HNJGRL9S) [AU](https://www.amazon.au/dp/B0HNJGRL9S)
  
 
 The book covers the fundamentals and the step-by-step construction of AI agents in Python. This repository provides the hands-on examples and the automated tests.
