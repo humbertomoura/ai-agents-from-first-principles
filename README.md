@@ -3,9 +3,9 @@
   <img src="assets/cover-ai-agents.jpg" alt="Cover of the book AI Agents from First Principles. A Practical Python Guide to Tools, Memory, and RAG" width="235">
   </a>
 </div>
-# AI Agents from First Principles
 
-**A Practical Python Guide to Tools, Memory, and RAG: source code and examples from the book**
+# AI Agents from First Principles
+**A Practical Python Guide to Tools, Memory, and RAG**
 
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 [![MIT License](https://img.shields.io/badge/License-MIT-2E7D32)](LICENSE)
