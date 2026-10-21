@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://www.amazon.com.br/dp/B0HMZ3N4C4">
+  <a href="https://www.amazon.com/dp/B0HNJ65Q5S">
   <img src="assets/cover-ai-agents.jpg" alt="Cover of the book AI Agents from First Principles. A Practical Python Guide to Tools, Memory, and RAG" width="235">
   </a>
 </div>
