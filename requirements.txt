@@ -1,3 +1,4 @@
+# Only examples/part2_ch15_assistant/real.py needs the OpenAI SDK.
 # The Responses API (client.responses) arrived in openai 1.66.0.
 # This edition was tested with openai 3.35.1.
-openai>=1.66
+openai>=1.66,<4

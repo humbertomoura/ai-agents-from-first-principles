@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code in teaching or research, please cite the book."
+title: "AI Agents from First Principles: companion code"
+authors:
+  - family-names: "Moura Costa"
+    given-names: "Humberto Jorge de"
+license: MIT
+repository-code: "https://github.com/humbertomoura/ai-agents-from-first-principles"
+preferred-citation:
+  type: book
+  title: "AI Agents from First Principles: A Practical Python Guide to Tools, Memory, and RAG"
+  authors:
+    - family-names: "Moura Costa"
+      given-names: "Humberto Jorge de"
+  year: 2026
+  edition: "1"
+  url: "https://www.amazon.com/dp/B0HNJGRL9S"
